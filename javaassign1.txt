@@ -1,0 +1,126 @@
+1)
+
+
+public class Demo1 {
+	//a ref to an array of String type
+public static void main(String args[])
+{
+	
+	int n1=Integer.parseInt(args[0]);	
+    
+    System.out.println("Printing Even numbers between 1 and " + n1);
+   
+    for(int i=1; i <= n1; i++){
+           
+            if( i % 2 == 0){
+                    System.out.print(i + " ");		
+}
+}
+}
+}
+
+2.	Create an array of integers by reading values from the user. Display the sum and average of the integers. Also, display the number of values less than the average
+
+-->
+
+public class Demo1 {
+	//a ref to an array of String type
+public static void main(String args[])
+{
+	int arr[]=new int[6];
+	int sum=0,avg;
+
+	arr[0]=3;
+	arr[1]=4;
+	arr[2]=8;
+	arr[3]=5;
+	arr[4]=2;
+	arr[5]=9;
+	for (int i=0; i<6; i++)
+	{
+	sum=sum+arr[i];
+	}
+	avg=sum/arr.length;
+	System.out.println("Sum is"+sum);
+	System.out.println("Average is"+avg);
+
+}
+}
+
+------x-----------X
+
+import java.util.Scanner;
+public class Demo1 {
+	//a ref to an array of String type
+public static void main(String args[])
+{
+	int arr[]=new int[6];
+	int n, sum=0;
+	float avg;
+	Scanner s = new Scanner(System.in);
+	System.out.print("Enter no. of elements you want in array:");
+	n = s.nextInt();
+    System.out.println("Enter the elements of array");
+    
+	for (int i=0; i<n; i++)
+	{
+		arr[i]=s.nextInt();
+	sum=sum+arr[i];
+	}
+	avg=(float)sum/n;
+	System.out.println("Sum is"+sum);
+	System.out.println("Average is"+avg);
+if
+
+}
+}
+
+====================================================================
+3)
+
+3.	Write a program that accepts two numbers and a operator like (+,-,*, /) as command line arguments and perform the appropriate operation indicated by the operator. 
+
+import java.util.Scanner;
+public class Demo1 {
+	//a ref to an array of String type
+public static void main(String args[])
+{
+	int a=Integer.parseInt(args[0]);
+	int b=Integer.parseInt(args[1]);
+	char c=args[2].charAt(0);
+
+	switch(c)
+	{
+	case '+':
+	                System.out.println("Addition of "+a+" and "+b+" : "+(a+b));
+	                break;
+
+	            case '-':
+	                System.out.println("Subtraction of "+a+" and "+b+" : "+(a-b));
+	                break;
+
+	            case '*':
+	                System.out.println("Multiplication of "+a+" and "+b+" : "+(a*b));
+	                break;
+
+	            case '/':
+	                System.out.println("Division of "+a+" and "+b+" : "+(a/b));
+	                break;
+
+	          
+	            default:
+	                System.out.println("Please Enter '+', '-', '*', '/' & '%' operator only.");
+	        } 	
+
+}
+}
+
+
+===========================================================================
+4)
+4.	Write a program that accepts a number in the range 1 to 50 from the Command Line. It then compares the number against a single dimension array of five integer elements ranging in value from 1 to 50. The program displays the message BINGO once the given input is found in the array. 
+
+
+
+
+	
