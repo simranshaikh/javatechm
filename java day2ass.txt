@@ -1,0 +1,75 @@
+public class Book {
+	private int bookNo;
+	private String title;
+	private String author;
+	private float price;
+	
+
+// default constructor
+	public Book() {
+		
+	}
+
+	public int getBookNo() {
+		return bookNo;
+	}
+
+	public void setBookNo(int bookNo) {
+		this.bookNo = bookNo;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "[bookNo=" + bookNo + ", title=" + title + ", author="
+				+ author + ", price=" + price + "]";
+	}
+
+}
+
+===================
+
+
+import java.util.Scanner;
+public class Test3 {
+	public static void main(String args[])
+	{
+		Book b1=new Book();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the book number");
+		int bookNo = sc.nextInt();
+		b1.setBookNo(bookNo);
+		System.out.println("Enter the title");
+		String title=sc.next();
+		b1.setTitle(title);
+		System.out.println("Enter the author");
+		String author=sc.next();
+		b1.setAuthor(author);
+		System.out.println("Enter the price");
+		float price=sc.nextFloat();
+		b1.setPrice(price);
+		System.out.println(b1);
+	}
